@@ -24,8 +24,3 @@ def predictSeverityFromDataframe(df):
 def predictSeverityFromDict(dict):
     df = pd.DataFrame(dict, index=[0])
     return predictSeverityFromDataframe(df)
-
-# sys.modules['predictSeverityFromDataframe'] = predictSeverityFromDataframe
-sys.modules['predictSeverityFromDict'] = predictSeverityFromDict
-# sys.modules['predictInfectionProbabilityFromDataframe'] = predictInfectionProbabilityFromDataframe
-sys.modules['predictInfectionProbabilityFromDict'] = predictInfectionProbabilityFromDict
