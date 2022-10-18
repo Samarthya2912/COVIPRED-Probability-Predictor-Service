@@ -1,6 +1,5 @@
 import pandas as pd
 import pickle
-import sys
 from Features import getFeatures
 
 features = getFeatures()

@@ -1,6 +1,6 @@
 from flask_restful import Resource, Api, reqparse
 from Features import getFeatures
-from Predictor import predictInfectionProbabilityFromDict
+from Predictors import predictInfectionProbabilityFromDict
 
 class Predictor(Resource):
     def get(self): 
