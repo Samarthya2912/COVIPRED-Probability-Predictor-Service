@@ -1,5 +1,5 @@
 from flask_restful import Resource, Api, reqparse
-from Features import getFeatures
+from getFeatures import getFeatures
 from Predictors import predictInfectionProbabilityFromDict
 
 class Predictor(Resource):
