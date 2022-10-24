@@ -15,12 +15,12 @@ def predictInfectionProbabilityFromDict(dict):
     df = pd.DataFrame(dict, index=[0])
     return predictInfectionProbabilityFromDataframe(df)
 
-def predictSeverityFromDataframe(df):
+def predictInfectionFromDataframe(df):
     df = df[features]
     filename = config['model']
     loaded_model = pickle.load(open(filename, 'rb'))
-    return loaded_model.predict(df)
+    return loaded_model.predict(df)[0]
 
-def predictSeverityFromDict(dict):
+def predictInfectionFromDict(dict):
     df = pd.DataFrame(dict, index=[0])
-    return predictSeverityFromDataframe(df)
+    return predictInfectionFromDataframe(df)

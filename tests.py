@@ -6,4 +6,4 @@ dict = {
     'head_ache': 1, 'age_60_and_above': 0, 'gender': 0, 'test_indication': 0
 }
 
-print(Predictors.predictInfectionProbabilityFromDict(dict))
+print(Predictors.predictInfectionFromDict(dict))
